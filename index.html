@@ -1,0 +1,52 @@
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="jabil.png">
+
+    <title>Data Entry Login</title>
+
+    <!-- Bootstrap core CSS -->
+      <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="signin.css" rel="stylesheet">
+  </head>
+
+  <body class="text-center bg-dark" action="checkadmin.php" method="POST">
+    <form class="form-signin" action="checkadmin.php" method="POST">
+      <img class="mb-4 rounded" src="logo.jpg" alt="" width="200" height="200">
+      <h1 class="h3 mb-3 font-weight-normal h1-color" >Data Entry System</h1>
+        <div class="align-items-center">
+           <div class="col-sm-20">
+              <input type="password" class="form-control" name="password" id="inputpassword" placeholder="password" required>
+           </div>
+           <div id="s"></div>
+
+         </div>
+        <div>
+           <input type="submit" class="btn btn-lg btn-primary btn-block"  value="LOGIN">
+        </div>
+    </form>
+    <script>
+      const urlParams = new URLSearchParams(window.location.search);
+      const s= urlParams.get('s');
+      var display=document.getElementById("s");
+      if(s==1){
+         display.innerHTML=`<div class="alert alert-danger" role="alert">
+Please Login Again
+</div>`;
+      }
+      else if(s==0){
+         display.innerHTML=`<div class="alert alert-danger" role="alert">
+            Wrong password
+            </div>`;
+      }
+   </script>
+
+  </body>
+</html>

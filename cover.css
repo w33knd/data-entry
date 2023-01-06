@@ -1,0 +1,82 @@
+
+/*
+ * Base structure
+ */
+
+html,
+body {
+  height: 100%;
+  width:auto;
+  background-color: #e9bcbc;
+  /* background-image: url('bg.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center; 
+  background-size: cover; */
+}
+
+body {
+  display: -ms-flexbox;
+  display: flex;
+  color: black;
+  font-size: large;
+  /* text-shadow: 0 .05rem .1rem rgba(0, 0, 0, .5); */
+}
+
+h1{
+font-family: 'Roboto', sans-serif;
+}
+img { 
+  background: transparent; 
+}
+label {
+  width: auto;
+}
+.btn {
+  width: 10em;
+}
+
+.lead {
+  font-size: 2em;
+}
+
+#formcontainer {
+  margin: auto;
+  max-width: 1500px;
+}
+
+/*
+ * Header
+ */
+.masthead {
+  margin-bottom: 2rem;
+}
+
+.navbar-brand {
+  margin-bottom: 0;
+  font-size: 2em;
+}
+
+@media (min-width: 48em) {
+  .nav-masthead {
+    float: right;
+  }
+}
+/*
+ * Cover
+ */
+.cover {
+  padding: 0 1.5rem;
+}
+.cover .btn-lg {
+  padding: .75rem 1.25rem;
+  font-weight: 700;
+}
+
+/*
+ * Footer
+ */
+.mastfoot {
+  color: rgba(255, 255, 255, .5);
+}
+
